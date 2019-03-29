@@ -38,8 +38,8 @@ def get(id):
             result[student] = item
             count += 1
         return jsonify({'student:': result})
-
-#add one student and should send a request in terminal
+    
+#you should send a request in terminal and it will add one student
 #curl -i -H "Content-Type: application/json" -X POST -d'{"stu_id":"4","stu_age":"21","stu_name":"bobo","stu_pwd":"zxx23"}' http://127.0.0.1:8080/student/post
 @app.route('/student/post',methods=["POST"])
 def post():
