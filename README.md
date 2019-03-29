@@ -24,3 +24,8 @@ The request just like
 
 @app.route('/crime',methods=['GET'])
 #get some data(crime_id and month) from url, and store in my database
+
+The student database is created like 
+CREATE TABLE student.stu (stu_id int PRIMARY KEY,stu_age int,stu_name text,stu_pwd text);
+The crime database is created like
+CREATE TABLE crimesdata.stats (crime_id int PRIMARY KEY,month text);
