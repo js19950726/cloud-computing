@@ -54,7 +54,7 @@ def post():
     session.execute("""insert into student.stu(stu_id,stu_age,stu_name,stu_pwd) values ({},{},'{}','{}')""".format(new_record['stu_id'],new_record['stu_age'],new_record['stu_name'],new_record['stu_pwd']))
     return jsonify({'message':'record has created:{}'}.format(new_record['stu_name'])),201
 
-#delete one student and should send a request in terminal
+#you should send a request in terminal and it will delete a student which you choose
 #curl -X "DELETE" http://127.0.0.1:8080/student/delete/<id>
 @app.route('/student/delete/<id>',methods=['DELETE'])
 def delete(id):
