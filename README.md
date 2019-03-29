@@ -1,4 +1,4 @@
-# cloud-computing
+# cloud-computing mini project
 It's a progect which develpo in Python and Flask and build a prototype of a Cloud application.
 I use cassandra as my database.
 There is 4 REST-based service interface.
